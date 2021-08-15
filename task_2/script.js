@@ -27,9 +27,7 @@ const parsedValues = parseQueryString(url);
 form.addEventListener('input', ({target}) => {
     if (target.name !== 'sale') {
         const formData = [...new FormData(target.form)];
-        console.log(formData)
         const search = new URLSearchParams(formData).toString();
-        console.log(search)
         const url = `${href}?${search}`;
         console.log(url);
     }
