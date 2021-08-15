@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task_1</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" name="name" id="name_input" value="Xxxx">
+
+<script>
+    const input = document.querySelector("#name_input");
+
+    function changeInput() {
+        input.value === input.defaultValue
+            ? input.classList.remove("red")
+            : input.classList.add("red")
+    }
+
+    input.addEventListener("input", changeInput)
+</script>
+</body>
+</html>
