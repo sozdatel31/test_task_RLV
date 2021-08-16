@@ -11,7 +11,7 @@ const firstRequest = new Promise((res, rej) => {
     xhr.onerror = () => rej(xhr.status);
 });
 
-const secondRequest = new Promise(() => {
+const secondRequest = new Promise((res, rej) => {
     const xhr = new XMLHttpRequest();
 
     xhr.open('GET', url2);
