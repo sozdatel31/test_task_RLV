@@ -28,7 +28,7 @@ export function Employees() {
             setEmployees([Employee, ...employees]);
             setValue("");
         } else {
-            setError("");
+            setError("ошибка");
         }
     };
 

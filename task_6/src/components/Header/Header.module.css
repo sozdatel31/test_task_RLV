@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     height: 60px;
-    background-color: aqua;
+    background-color: cadetblue;
     display: flex;
     justify-content: center;
 }
@@ -17,5 +17,11 @@
 
 .navItem {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 
+}
+
+.navItemA {
+    color: darkkhaki;
 }

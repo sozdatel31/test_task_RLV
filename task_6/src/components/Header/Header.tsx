@@ -6,8 +6,8 @@ export function Header() {
     return (
         <div className={style.container}>
             <nav className={style.navigation}>
-                <NavLink className={style.navItem} activeClassName="" to="/">Главная</NavLink>
-                <NavLink className={style.navItem} activeClassName="" to="/employees">Сотрудники</NavLink>
+                <NavLink className={style.navItem} activeClassName={style.navItemA} exact to="/">Главная</NavLink>
+                <NavLink className={style.navItem} activeClassName={style.navItemA} to="/employees">Сотрудники</NavLink>
             </nav>
         </div>
     );
